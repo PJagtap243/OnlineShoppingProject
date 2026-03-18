@@ -83,7 +83,7 @@
 					<target>11</target>
 				</configuration>
 			</plugin>
-			
+				
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -92,9 +92,8 @@
 					<forkCount>3</forkCount>
 					<reuseForks>true</reuseForks>
 					<suiteXmlFiles>
-						<suiteXmlFile>
-						src\resources\com\runners\testng.xml</suiteXmlFile>
-						--> </suiteXmlFiles>
+						<suiteXmlFile>src/resources/com/runners/testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
 
 				</configuration>
 			</plugin>
