@@ -93,7 +93,7 @@
 					<reuseForks>true</reuseForks>
 					<suiteXmlFiles>
 						<suiteXmlFile>
-						src\resources\TestRunners\testng.xml</suiteXmlFile>
+						src\resources\com\runners\testng.xml</suiteXmlFile>
 						--> </suiteXmlFiles>
 
 				</configuration>
