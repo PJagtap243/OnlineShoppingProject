@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeTest;
 import com.factory.DriverFactory;
 import com.pages.HomePage;
 import com.pages.LoginPage;
+import com.pages.RegistraionPage;
 import com.pages.SearchResultsPage;
 import com.tests.LoginPageTest;
 
@@ -21,6 +22,7 @@ public class BaseTest {
 	protected LoginPage lpage;
 	protected HomePage hPage;
 	protected SearchResultsPage sPage;
+	protected RegistraionPage rPage;
 	protected Properties prop;
 	
 	@BeforeTest

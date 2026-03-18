@@ -11,6 +11,7 @@ public class LoginPage {
 	private By password = By.id("input-password");
 	private By loginBtn = By.xpath("//input[@value='Login']");
 	private By error = By.xpath("//div[contains(@class,'alert-danger')]");
+	private By registerPageLink = By.linkText("Register");
 	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -37,6 +38,11 @@ public class LoginPage {
 	
 	public String getErrorMessageOnLogin() {
 		return driver.findElement(error).getText();
+	}
+	
+	public RegistraionPage checkRegisterationPageLink() {
+		driver.findElement(registerPageLink).click();
+		return new RegistraionPage(driver);
 	}
 
 }
